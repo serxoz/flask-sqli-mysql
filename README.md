@@ -32,5 +32,5 @@ curl -d "email=john.doe@zmail.com&password=john@123" http://127.0.0.1:5000/sqli/
 
 Inyección SQL:
 ```bash
-curl -d "email=john.doe@zmail.com';-- &password=john@123" http://127.0.0.1:5000/sqli/login
+curl -d "email=john.doe@zmail.com';-- &password=fakepasswd" http://127.0.0.1:5000/sqli/login
 ```
