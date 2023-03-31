@@ -29,3 +29,8 @@ Utilizando cURL puede probar a *hacer login*:
 ```bash
 curl -d "email=john.doe@zmail.com&password=john@123" http://127.0.0.1:5000/sqli/login
 ```
+
+Inyección SQL:
+```bash
+curl -d "email=john.doe@zmail.com';-- &password=john@123" http://127.0.0.1:5000/sqli/login
+```
